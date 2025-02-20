@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>石头剪刀布</title>
-  <link rel="stylesheet" href="/index.css">
+  <!-- erdong -->
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
   <div class="game">
     <!-- 显示回合 -->
     <div class="round">
       <div class="content">
-        显示回合
+        <!-- 显示回合 -->
       </div>
     </div>
     <!-- 游戏内容部分 -->
@@ -22,10 +23,10 @@
         </div>
         <div class="grade">
           <div class="name">
-            <p>机器人</p>
+            <p>机器人</p >
           </div>
           <div class="robot-grade">
-            <p>胜：0 | 负：0</p>
+            <p class="r-score">胜：0 | 负：0</p >
           </div>
         </div>
       </div>
@@ -36,10 +37,10 @@
         </div>
         <div class="grade">
           <div class="name">
-            <p>玩家</p>
+            <p>玩家</p >
           </div>
           <div class="human-grade">
-            <p>胜：0 | 负：0</p>
+            <p class="h-score">胜：0 | 负：0</p >
           </div>
         </div>
       </div>
@@ -47,12 +48,14 @@
 
     <!-- 显示本回合赢家 -->
     <div class="winner">
-      <p>本回合winner</p>
+      <p class="win-text">
+        <!-- 本回合winner -->
+      </p >
     </div>
 
     <!-- 下一回合按钮（包括弹窗） -->
     <div class="next">
-      <button class="next-round" name="next-round" onclick="showDialog()">开始下一回合</button>
+      <button class="next-round" name="next-round" >开始下一回合</button>
     </div>
     <dialog id="mydialog">
       <form method="dialog">
@@ -63,13 +66,14 @@
             <option value="石头">石头</option>
             <option value="布">布</option>
           </select>
-        </p>
+        </p >
         <div class="confirm-bnt">
           <button class="confirm" type="submit" value="确认" >确认</button>
         </div>
       </form>
     </dialog>
   </div>
-  <script src="/index.js"></script>
+  <!-- erdong -->
+  <script src="./index.js"></script>
 </body>
 </html>
